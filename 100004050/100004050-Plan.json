@@ -1,0 +1,86 @@
+{
+  "part_number": "1 000 040 50 A",
+  "designation": "RBE03/IC - RACCORD/ABOUT - OBTURATEUR G1/4 FEMELLE SP",
+  "material": "X2CrNiMo17.12.2",
+  "norm": "R 700 001 00",
+  "scale": "6:1",
+  "drawn_by": "M. SALLAZ",
+  "drawn_date": "18-sept-18",
+  "checked_by": "C. DURIEUX",
+  "checked_date": "18-sept-18",
+  "tolerances_general": "R30092000 m",
+  "physical_data": {
+    "mass_g": 25.5,
+    "volume_cm3": 3.253,
+    "wetted_surface_mm2": 2532
+  },
+  "dimensions": {
+    "overall_length": { "value": 26, "tolerance": 0.1 },
+    "hexagon_across_flats": 17,
+    "thread_type": "G1/4",
+    "thread_pitch_mm": 1.337,
+    "diameters": {
+      "through_hole": { "value": 5, "tolerance": 0.05 },
+      "bore_fitted": { "value": 10, "fit": "E10" },
+      "internal_bore": { "value": 11.2 },
+      "external_shoulder_right": { "value": 15.5 },
+      "external_left": { "value": 16 },
+      "external_shoulder_left": { "value": 18.5 }
+    },
+    "right_side_OP10": {
+      "bore_depth": { "value": 8.05, "tolerance": 0.05 },
+      "chamfer": "0.1x45",
+      "bore_entry_angle_deg": 30,
+      "max_step": 2
+    },
+    "left_side_OP20": {
+      "bore_depth": { "value": 4.05, "tolerance": 0.05 },
+      "step_length": 8.5,
+      "total_from_left_face": 11,
+      "chamfer": "1x45",
+      "bore_entry_angle_deg": 30
+    },
+    "geometric_tolerances": [
+      { "type": "perpendicularity", "value": 0.05, "datum": "A" },
+      { "type": "cylindricity", "value": 0.04, "datum": "A" },
+      { "type": "cylindricity", "value": 0.04, "datum": "A" }
+    ]
+  },
+  "notes": [
+    "Face sans défauts, exempte de coups, bavures",
+    "AUCUNE DÉROGATION ADMISE",
+    "AUCUNE MODIFICATION ADMISE",
+    "CONTRAINTES SPÉCIALES À TRACER"
+  ],
+  "operations": {
+    "OP10": {
+      "side": "right (main spindle)",
+      "steps": [
+        "Face right end",
+        "Mill hex 6 flats (Hexagone=17)",
+        "Center drill Ø3.8",
+        "Drill Ø4.8",
+        "Drill Ø9.5 HSS 180°",
+        "Rough external profile",
+        "Finish external profile",
+        "Thread G1/4 external (pitch 1.337)",
+        "Rough internal bore",
+        "Finish internal bore (Ø10 E10, Ø5 ±0.05)",
+        "Cut off at length ~26"
+      ]
+    },
+    "OP20": {
+      "side": "left (sub-spindle)",
+      "steps": [
+        "Face left end",
+        "Drill Ø3.5",
+        "Drill Ø4.8",
+        "Rough internal bore",
+        "Rough external profile",
+        "Finish external profile",
+        "Finish internal bore (Ø11.2, depth 4.05)",
+        "Thread G1/4 internal (pitch 1.337)"
+      ]
+    }
+  }
+}
