@@ -75,5 +75,5 @@ X13.98                        ← last pass at largest diameter (near major Ø)
 - **OP20 internal**: G92 X11.70→13.3 Z-10 F1.337 (X increasing = internal)
 
 ### R10629730 — G1/2 BSP (pitch 1.814mm)
-- **OP10 external**: G92 X13.75→12.06 Z-9.1 F1.5 (on OP10 side, different thread zone)
-- **OP20 external**: G92 X20.15→18.45 Z-13.5 F1.814 (X decreasing = external G1/2)
+- **OP10 thread zone**: G92 X13.75→12.06 Z-9.1 F1.5 (⚠️ This is NOT the G1/2 thread — it is a separate M-thread zone on the OP10 side with pitch 1.5mm. The G1/2 BSP thread with pitch 1.814mm is cut in OP20.)
+- **OP20 external G1/2**: G92 X20.15→18.45 Z-13.5 F1.814 (X decreasing = external G1/2 BSP)

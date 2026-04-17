@@ -76,7 +76,7 @@
         "Drill Ø6 (deep hole)",
         "Drill Ø9.5 HSS 180° (ream step)",
         "Finish external profile (shoulders Ø17.5, Ø18.8, tapers, thread relief)",
-        "Thread G1/2 external (pitch 1.5)",
+        "Thread external (OP10 uses F1.5 — NOTE: this is NOT the G1/2 BSP thread; the G1/2 BSP at F1.814 is cut in OP20)",
         "Finish thread spring pass",
         "Ream/finish internal bore (Ø10 D10, Ø6.944 step)",
         "Cut off at overall length ~34"

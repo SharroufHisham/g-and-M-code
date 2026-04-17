@@ -64,9 +64,9 @@ This document catalogs every error made during AI-assisted G-code generation, wi
 
 | | |
 |---|---|
-| **What happened** | Used O29335200 instead of O29235200 (digit "3" vs "2" in position 3) |
-| **Root cause** | Fiche de réglage OCR/transcription ambiguity: "U 293 35200" was misread. The correct number is "U 292 35200". |
-| **How to prevent** | Cross-check DNC number against the OP10 DNC. OP10 = U28529600, OP20 = U29235200. The numbers should be different but from the same series. If in doubt, flag the ambiguity. |
+| **What happened** | Used O29335200 instead of O29235200 (digit "3" vs "2" in position 4) |
+| **Root cause** | Fiche de réglage states "U 293 35200" but the verified program uses O29235200 ("292" not "293"). This is an OCR/transcription error in the fiche itself. |
+| **How to prevent** | 1. Cross-check DNC number against the OP10 DNC (OP10 = U28529600, OP20 = U29235200 — both in 2xx-series). 2. If the fiche number doesn't match an existing verified program, trust the verified program. 3. Flag any fiche vs program DNC discrepancies for human review. |
 
 ---
 
