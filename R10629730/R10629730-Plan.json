@@ -17,7 +17,7 @@
   "dimensions": {
     "overall_length": { "value": 34, "tolerance_note": "from OCR" },
     "hexagon_across_flats": 24,
-    "thread_external": { "type": "G1/2", "pitch_mm": 1.5 },
+    "thread_external": { "type": "G1/2", "pitch_mm": 1.814, "note": "BSP 14 TPI = 25.4/14 = 1.814 mm" },
     "thread_internal": { "type": "M14x1", "pitch_mm": 1.0, "note": "per profile spec R306 251 00" },
     "chamfer_main": "1.5x1.5",
     "taper_angles_deg": [14, 15],
@@ -91,7 +91,7 @@
         "Drill",
         "Rough internal bore",
         "Finish external profile",
-        "Thread M14x1 internal (per profile spec)",
+        "Thread G1/2 external from OP20 side (pitch 1.814, BSP 14 TPI)",
         "Finish internal bore per profile R306 251 00"
       ]
     }
