@@ -1,0 +1,38 @@
+FEUILLE DE REGLAGE NL 1500
+Machine,MORI SEIKI - N° 1069
+Section,226B
+DNC,U 293 35200
+Désignation,R 106 297 30 =F=
+Date,23/01/23
+Plan Usinage,U2/ RBE 06/IC
+Matricule,2744
+
+Outils
+#,Outil Corr,Désignation PO - Outil,Rayon,Plaq,Dimension,Séquence,Mag
+1,101,Ebauche ExT,"0,8",55°,,,
+2,202,Perçer KDS,---,,,,X
+3,303,Finition ExT,"0,4",35°,MSR 42.Q,,
+4,404,Ebauche INT,"0,4",,,,
+5,505,Fileter Ebauche,---,,,,
+6,606,Finition INT,---,,,,
+7,707,,---,,,,
+8,808,,---,,,,
+9,909,,---,,,,
+10,1010,,---,,,,
+11,1111,,---,,,,
+12,1212,,---,,,,
+13,1313,,---,,,,
+14,1414,,---,,,,
+15,1515,,---,,,,
+16,1616,,---,,,,
+
+Paramètres
+Mandrin Ø,
+Pince Ø,
+HEX,24
+Commentaires,
+Longueur de Butée,
+G54,
+Paramètres Embarreur IEMCA,
+% Temps / Cycle,4 min 35 sec
+OP,20

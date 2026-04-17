@@ -1,0 +1,99 @@
+{
+  "part_number": "R 106 297 30 F",
+  "designation": "RBE06/IC - ABOUT - OBTURATEUR G1/2 MALE",
+  "material": "X2CrNiMo17.12.2",
+  "norm": "R 700 001 00",
+  "scale": "5:1",
+  "drawn_by": "BERC",
+  "drawn_date": "08-févr-23",
+  "checked_by": "AUFRANT",
+  "checked_date": "08-févr-23",
+  "tolerances_general": "R30092000 m",
+  "physical_data": {
+    "mass_g": 59.4,
+    "volume_cm3": 7.569,
+    "wetted_surface_mm2": 4031
+  },
+  "dimensions": {
+    "overall_length": { "value": 34, "tolerance_note": "from OCR" },
+    "hexagon_across_flats": 24,
+    "thread_external": { "type": "G1/2", "pitch_mm": 1.814, "note": "BSP 14 TPI = 25.4/14 = 1.814 mm" },
+    "thread_internal": { "type": "M14x1", "pitch_mm": 1.0, "note": "per profile spec R306 251 00" },
+    "chamfer_main": "1.5x1.5",
+    "taper_angles_deg": [14, 15],
+    "diameters": {
+      "through_hole_small": { "value": 6 },
+      "bore_small": { "value": 6.5 },
+      "bore_fitted": { "value": 10, "fit": "D10", "note": "per profile spec" },
+      "internal_bore": { "value": 12, "note": "from OCR" },
+      "internal_bore_profile": { "value": 12.25, "tolerance": 0.05, "note": "per profile spec" },
+      "external_shoulder_1": { "value": 17.5, "tolerance": "+0.1" },
+      "external_shoulder_2": { "value": 18.8, "tolerance": "+0.1" },
+      "external_hex_body": { "value": 27 }
+    },
+    "right_side_OP10": {
+      "chamfer": "0.1x45",
+      "section_length": 12,
+      "bore_entry_angle_deg": 15
+    },
+    "left_side_OP20": {
+      "chamfer": "1.5x1.5",
+      "bore_entry_angle_deg": 14
+    },
+    "geometric_tolerances": [
+      { "type": "cylindricity", "value": 0.04, "datum": "A,B" },
+      { "type": "perpendicularity", "value": 0.05, "datum": "A" },
+      { "type": "cylindricity", "value": 0.05, "datum": "B" }
+    ]
+  },
+  "profile_spec": {
+    "document": "R 306 251 00 B",
+    "title": "FICHE PROFIL OBTURATEUR RBE06",
+    "key_dimensions": {
+      "profile_length": 10,
+      "entry_angle_deg": 45,
+      "bore_fitted_diameter": { "value": 10, "fit": "D10" },
+      "thread": "M14x1",
+      "internal_bore": { "value": 12.25, "tolerance": 0.05 },
+      "chamfer": "0.2x0.2",
+      "minimum_section": 2,
+      "step_tolerance": { "value": 1, "tolerance": "+0" }
+    }
+  },
+  "notes": [
+    "Cotation suivant Profil R306 251 00",
+    "CONTRAINTES SPÉCIALES À TRACER"
+  ],
+  "operations": {
+    "OP10": {
+      "side": "right (main spindle)",
+      "machine": "MORI SEIKI NL1500 N°1069",
+      "DNC": "U 285 29600",
+      "steps": [
+        "Face and rough external profile (Ø27, hex=24, tapers 14°/15°)",
+        "Center drill Ø16 at 90°",
+        "Drill Ø9.8",
+        "Drill Ø6 (deep hole)",
+        "Drill Ø9.5 HSS 180° (ream step)",
+        "Finish external profile (shoulders Ø17.5, Ø18.8, tapers, thread relief)",
+        "Thread external (OP10 uses F1.5 — NOTE: this is NOT the G1/2 BSP thread; the G1/2 BSP at F1.814 is cut in OP20)",
+        "Finish thread spring pass",
+        "Ream/finish internal bore (Ø10 D10, Ø6.944 step)",
+        "Cut off at overall length ~34"
+      ]
+    },
+    "OP20": {
+      "side": "left (sub-spindle)",
+      "machine": "MORI SEIKI NL1500 N°1069",
+      "DNC": "U 293 35200",
+      "steps": [
+        "Face and rough external profile",
+        "Drill",
+        "Rough internal bore",
+        "Finish external profile",
+        "Thread G1/2 external from OP20 side (pitch 1.814, BSP 14 TPI)",
+        "Finish internal bore per profile R306 251 00"
+      ]
+    }
+  }
+}
